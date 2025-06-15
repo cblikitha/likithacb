@@ -1,0 +1,152 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #0059b3;
+  border-radius: 5px;
+}
+
+/* Main Content */
+main.about {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  margin-bottom: 20px;
+  color: #004080;
+  font-size: 24px;
+}
+
+main p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Team Section (Uncomment if needed) */
+.team {
+  margin-top: 40px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.member {
+  text-align: center;
+  width: 200px;
+}
+
+.member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Contact Info Section - Orange and Black Theme */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.contact-info li {
+  margin-bottom: 15px;
+  color: #000; /* Black text */
+}
+
+.contact-info a {
+  color: #ff6600; /* Bright orange links */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #cc5200; /* Darker orange on hover */
+}
+.contact-info i {
+  color: #ff6600; /* Orange icon */
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
